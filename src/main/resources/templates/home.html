@@ -1,10 +1,33 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+	<meta charset="UTF-8" />
+	<title>Home Page</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
 </head>
 <body>
-	<h1>Welcome to home page</h1>
+
+
+	
+		
+		
+		
+		<div class="bg-image"></div>
+			<div class="bg-text" >
+			
+				<h1 class="font-weigth-bold ">Student Management System</h1>
+				<p>Start Collecting your students data in very smart way. we provide very efficient and smarter way to handle contacts.</p>
+				<a th:href="@{/students}">
+		  			<button class="btn btn-info btn-lg ">Manage Student</button>
+				</a>
+				
+			
+			</div>
+		
+		
+	
+		
+	
 </body>
 </html>

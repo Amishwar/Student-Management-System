@@ -18,14 +18,16 @@ public class StudentController {
 	private StudentService service;
 	
 	@GetMapping("/home")
-	public String home()
+	public String home(Model m)
 	{
+		
 		return "home";
 	}
 	
 	@GetMapping("/students")
 	public String getAllStudents(Model m)
 	{
+		
 		m.addAttribute("students",service.getAllStudents());
 		
 		return "students";
